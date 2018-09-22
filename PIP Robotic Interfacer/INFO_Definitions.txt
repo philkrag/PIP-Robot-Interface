@@ -1,0 +1,32 @@
+﻿
+
+PORTS...
+60000 => Robot (FROM)
+60001 => Robot (TO)
+60100 => Controller (FROM)
+
+
+
+MESSAGE INDEXING CONSOLE...
+[00] - Not command. Informative Only.
+[30] - TCP Transmission.
+[20] - Keyboard Input.
+[99] - Error Information.
+
+
+COLOUR CODING CONSOLE...
+GREEN => System making decision.
+BLUE => Communication transmission between applications / hardware.
+WHITE => General information for user / programmer.
+YELLOW => Operator \ Aux App Input.
+RED => System Errors.
+
+
+
+SERIAL DRIVE TRANSMISSIONS...
+Type : Unit: X-Axis: Y-Axis : Z-Axis : Button 1
+
+
+ETHERNET DRIVE TRANSMISSIONS...
+Type : Unit: X-Axis: Y-Axis : Z-Axis : Button 1
+
