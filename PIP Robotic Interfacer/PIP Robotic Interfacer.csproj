@@ -49,6 +49,7 @@
     <Compile Include="CL_Sensor_Feedback.cs" />
     <Compile Include="CL_TCPClient.cs" />
     <Compile Include="CL_TCPListener.cs" />
+    <Compile Include="CL_UDPClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -82,6 +82,7 @@ namespace PIP_Robotic_Interfacer
             
             // PC => ROBOT
             CL_Global_Variables.IP_Address[1] = "192.168.0.183";
+            //CL_Global_Variables.IP_Address[1] = "127.0.0.1";
             CL_Global_Variables.Port_Address[1] = "60001";
 
             // CONTROLLER RECEIVE
@@ -151,7 +152,7 @@ namespace PIP_Robotic_Interfacer
                             int[] Translation = CL_Sensor_Feedback.Transate_Controller_Commands(CL_Global_Variables.Received_Data);
                             string Command_String = CL_Drive_Commands.Basic_Transmission(001, Translation[0], Translation[1], Translation[2], Translation[3]);
                             string[] Function_Data = new string[] { "1", Command_String };
-                            Thread Robot_Send = new Thread(CL_TCPClient.Connect);
+                            Thread Robot_Send = new Thread(CL_UDPClient.Connect);
 
                             Console.ResetColor();
                             Console.ForegroundColor = ConsoleColor.Green;
